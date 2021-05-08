@@ -1,0 +1,21 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+  
+        <h1>Error: Article for {{title}} already exists</h1>
+        <ul>
+            <li>
+                <a href="{% url 'index' %}">Home</a>
+            </li>
+            <li> 
+                <a href = "{% url 'newedit' %}">Edit this entry</a>
+            </li>
+        </ul>
+        
+        
+
+{% endblock %}
